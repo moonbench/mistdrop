@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MistDrop testing page</title>
+    <link rel="stylesheet" href="src/mistdrop.css" />
+    <style type="text/css">
+      body {
+        margin: 0px auto;
+        padding: 1em 1em;
+        max-width: 1000px;
+        min-width: 500px;
+      }
+      body > div {
+        margin: 4em 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>MistDrop testing page</h1>
+
+    <hr>
+
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+    <div>
+      <h2>Paragraphs</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+      <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    </div>
+
+    <div>
+      <h2>Text formatting</h2>
+      <p><b>Bold</b> <strong>Strong</strong></p>
+      <p><i>Italic</i> <em>Emphasis</em></p>
+      <p><u>Underline</u></p>
+      <p><strike>Strikethrough</strike></p>
+    </div>
+
+    <div>
+      <h2>Links</h2>
+      <a href="#">A link</a>
+    </div>
+
+    <div>
+      <h2>Buttons</h2>
+      <a class="button" href="#">.button class</a>
+      <button>A button</button>
+      <input type="button" value="Input type button" />
+
+    </div>
+
+    <div>
+      <h2>Disabled buttons</h2>
+      <a class="button disabled">.button class</a>
+      <button disabled="disabled">A button</button>
+      <input type="button" value="Input type button" disabled="disabled" />
+    </div>
+
+    <div>
+      <h2>Inputs</h2>
+      <input type="text" placeholder="Text input" />
+      <input type="email" placeholder="Email input" />
+      <input type="password" placeholder="Password input" />
+      <input type="search" placeholder="Search input" />
+      <input type="tel" placeholder="Tel input" />
+      <input type="url" placeholder="Url input" />
+      <textarea>A text area</textarea>
+      <select>
+	<option>Foo</option>
+	<option>Bar</option>
+      </select>
+      <label>Checkbox</label> <input type="checkbox">
+      <label>Radio</label> <input type="radio">
+    </div>
+
+    <div>
+      <h2>Disabled inputs</h2>
+      <input type="text" placeholder="Text input" disabled="disabled" />
+      <input type="email" placeholder="Email input" disabled="disabled" />
+      <input type="password" placeholder="Password input" disabled="disabled" />
+      <input type="search" placeholder="Search input" disabled="disabled" />
+      <input type="tel" placeholder="Tel input" disabled="disabled" />
+      <input type="url" placeholder="Url input" disabled="disabled" />
+      <textarea disabled="disabled" >A text area</textarea>
+      <select disabled="disabled" >
+	<option>Foo</option>
+	<option>Bar</option>
+      </select>
+      <label>Checkbox</label> <input type="checkbox" disabled="disabled" >
+      <label>Radio</label> <input type="radio" disabled="disabled" >
+    </div>
+
+    <div>
+      <h2>Blockquotes</h2>
+      <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
+      <blockquote>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</blockquote>
+      <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
+    </div>
+
+    <div>
+      <h2>Pre</h2>
+      <pre>THE SOFTWARE IS AS , WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE...</pre>
+    </div>
+    
+    <div>
+      <h2>Pre with Code</h2>
+      <pre>
+	<code>/**
+ * MistDrop
+ * --------
+ * Version: 0.0.1
+ */
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: #4D4B4B;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: 300px;
+}</code>
+      </pre>
+    </div>
+
+    <div>
+      <h2>hr</h2>
+      <p>Hello world</p>
+      <hr>
+      <p>Testing foo bar</p>
+    </div>
+
+    <div>
+      <h2>Hidden</h2>
+      <p>There should be no sentence between the brackets</p>
+      [
+      <span class="hidden">I should be invisible.</span>
+      ]
+    </div>
+
+    <div>
+      <h2>Clearfix</h2>
+      <div class="clearfix">
+	<div style="width: 300px;">
+	  <div style="float: right">I should be on top</div>
+	</div>
+      </div>
+      <div>
+	I should be on bottom.
+      </div>
+    </div>
+
+    <div>
+      <h2>Success</h2>
+      <div class="success">I am a success message</div>
+    </div>
+
+    <div>
+      <h2>Warn</h2>
+      <div class="warn">I'm a warning</div>
+    </div>
+
+    <div>
+      <h2>Error</h2>
+      <div class="error">I'm an error message</div>
+    </div>
+
+    <hr/>
+
+    <div>
+      mistdrop v0.0.1
+    </div>
+  </body>
+</html>
