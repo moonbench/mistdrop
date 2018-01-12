@@ -129,6 +129,31 @@ input[type='radio'] {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 0.4em 0;
+    min-height: 1em;
+    border-bottom: 1px solid #998F8F;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    border-bottom-color: #BFB6B6;;
+}
+h3 {
+    font-size: 1.75em;
+    border-bottom-color: #C8BFBF;;
+}
+h4 {
+    font-size: 1.5em;
+    border-bottom-color: #DAD4D4;
+}
+h5 {
+    font-size: 1.25em;
+    border-bottom-color: #E9E4E4;
+}
+h6 {
+    font-size: 1.1em;
+    border-bottom-color: #EEE;
 }
 
 img {
