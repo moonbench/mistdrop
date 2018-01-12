@@ -31,6 +31,16 @@ body {
 /**
  * Element styles
  */
+a {
+    color: #009;
+}
+a:focus {
+    color: #1eb2bd;
+}
+a:active {
+    color: #427cad;
+}
+
 blockquote {
     border-left: 2px solid #cfd8dd;
     padding: 0.2em 1.6em;
