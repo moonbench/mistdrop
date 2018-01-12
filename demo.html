@@ -11,7 +11,15 @@
         min-width: 500px;
       }
       body > div {
-        margin: 4em 0;
+        margin: 0 0 4em 0;
+        padding: 0 1em;
+      }
+      body > h2 {
+        background-color: #333;
+        color: #EDEDED;
+        padding: 0.5em 0.7em;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
       }
     </style>
   </head>
@@ -19,7 +27,16 @@
   <body>
     <h1>MistDrop testing page</h1>
 
-    <hr>
+    <p>This document provides examples of elements using the mistdrop stylesheet.</p>
+    <p>MistDrop can be found on github: <a href="https://github.com/moonbench/mistdrop">https://github.com/moonbench/mistdrop</a></p>
+
+    <h2>Text formatting</h2>
+    <div>
+      <h3>Blockquotes</h3>
+      <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
+      <blockquote>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</blockquote>
+      <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
+    </div>
 
     <div>
       <h1>Heading 1</h1>
@@ -31,14 +48,14 @@
     </div>
 
     <div>
-      <h2>Paragraphs</h2>
+      <h3>Paragraphs</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
       <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
     </div>
 
     <div>
-      <h2>Text formatting</h2>
+      <h3>Styles</h3>
       <p><b>Bold</b> <strong>Strong</strong></p>
       <p><i>Italic</i> <em>Emphasis</em></p>
       <p><u>Underline</u></p>
@@ -46,68 +63,12 @@
     </div>
 
     <div>
-      <h2>Links</h2>
+      <h3>Links</h3>
       <a href="#">A link</a>
     </div>
 
     <div>
-      <h2>Buttons</h2>
-      <a class="button" href="#">.button class</a>
-      <button>A button</button>
-      <input type="button" value="Input type button" />
-
-    </div>
-
-    <div>
-      <h2>Disabled buttons</h2>
-      <a class="button disabled">.button class</a>
-      <button disabled="disabled">A button</button>
-      <input type="button" value="Input type button" disabled="disabled" />
-    </div>
-
-    <div>
-      <h2>Inputs</h2>
-      <input type="text" placeholder="Text input" />
-      <input type="email" placeholder="Email input" />
-      <input type="password" placeholder="Password input" />
-      <input type="search" placeholder="Search input" />
-      <input type="tel" placeholder="Tel input" />
-      <input type="url" placeholder="Url input" />
-      <textarea>A text area</textarea>
-      <select>
-	<option>Foo</option>
-	<option>Bar</option>
-      </select>
-      <label>Checkbox</label> <input type="checkbox">
-      <label>Radio</label> <input type="radio">
-    </div>
-
-    <div>
-      <h2>Disabled inputs</h2>
-      <input type="text" placeholder="Text input" disabled="disabled" />
-      <input type="email" placeholder="Email input" disabled="disabled" />
-      <input type="password" placeholder="Password input" disabled="disabled" />
-      <input type="search" placeholder="Search input" disabled="disabled" />
-      <input type="tel" placeholder="Tel input" disabled="disabled" />
-      <input type="url" placeholder="Url input" disabled="disabled" />
-      <textarea disabled="disabled" >A text area</textarea>
-      <select disabled="disabled" >
-	<option>Foo</option>
-	<option>Bar</option>
-      </select>
-      <label>Checkbox</label> <input type="checkbox" disabled="disabled" >
-      <label>Radio</label> <input type="radio" disabled="disabled" >
-    </div>
-
-    <div>
-      <h2>Blockquotes</h2>
-      <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
-      <blockquote>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</blockquote>
-      <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
-    </div>
-
-    <div>
-      <h2>Pre</h2>
+      <h3>Pre</h3>
       <pre>THE SOFTWARE IS AS , WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
@@ -118,7 +79,7 @@ OTHER DEALINGS IN THE SOFTWARE...</pre>
     </div>
     
     <div>
-      <h2>Pre with Code</h2>
+      <h3>Pre &gt; Code</h3>
       <pre>
 	<code>/**
  * MistDrop
@@ -145,23 +106,98 @@ body {
       </pre>
     </div>
 
+
+    <h2>Elements</h2>
     <div>
-      <h2>hr</h2>
+      <h3>Buttons</h3>
+      <a class="button" href="#">.button class</a>
+      <button>A button</button>
+      <input type="button" value="Input type=button" />
+
+    </div>
+
+    <div>
+      <h3>Buttons (disabled)</h3>
+      <a class="button disabled">.button class</a>
+      <button disabled="disabled">A button</button>
+      <input type="button" value="Input type=button" disabled="disabled" />
+    </div>
+
+    <div>
+      <h3>Inputs</h3>
+      <input type="text" placeholder="Text input" />
+      <input type="email" placeholder="Email input" />
+      <input type="password" placeholder="Password input" />
+      <input type="search" placeholder="Search input" />
+      <input type="tel" placeholder="Tel input" />
+      <input type="url" placeholder="Url input" />
+      <p>
+	<textarea>A text area</textarea>
+      </p>
+      <p>
+	<select>
+	  <option>Select</option>
+	  <option>Option</option>
+	</select>
+      </p>
+      <p>
+	<label>Checkbox</label> <input type="checkbox">
+      </p>
+      <p>
+	<label>Radio</label> <input type="radio">
+      </p>
+    </div>
+
+    <div>
+      <h3>Inputs (disabled)</h3>
+      <input type="text" placeholder="Text input" disabled="disabled" />
+      <input type="email" placeholder="Email input" disabled="disabled" />
+      <input type="password" placeholder="Password input" disabled="disabled" />
+      <input type="search" placeholder="Search input" disabled="disabled" />
+      <input type="tel" placeholder="Tel input" disabled="disabled" />
+      <input type="url" placeholder="Url input" disabled="disabled" />
+      <p>
+	<textarea disabled="disabled" >A text area</textarea>
+      </p>
+      <p>
+	<select disabled="disabled" >
+	  <option>Select</option>
+	  <option>Option</option>
+	</select>
+      </p>
+      <p>
+	<label>Checkbox</label> <input type="checkbox" disabled="disabled" >
+      </p>
+      <p>
+	<label>Radio</label> <input type="radio" disabled="disabled" >
+      </p>
+    </div>
+
+    <div>
+      <h3>hr</h3>
       <p>Hello world</p>
       <hr>
       <p>Testing foo bar</p>
     </div>
 
     <div>
-      <h2>Hidden</h2>
-      <p>There should be no sentence between the brackets</p>
-      [
-      <span class="hidden">I should be invisible.</span>
-      ]
+      <h3>.success</h3>
+      <div class="success">I am a success message</div>
     </div>
 
     <div>
-      <h2>Clearfix</h2>
+      <h3>.warn</h3>
+      <div class="warn">I'm a warning</div>
+    </div>
+
+    <div>
+      <h3>.error</h3>
+      <div class="error">I'm an error message</div>
+    </div>
+
+    <h2>Style fixes</h2>
+    <div>
+      <h3>.clearfix</h3>
       <div class="clearfix">
 	<div style="width: 300px;">
 	  <div style="float: right">I should be on top</div>
@@ -173,18 +209,11 @@ body {
     </div>
 
     <div>
-      <h2>Success</h2>
-      <div class="success">I am a success message</div>
-    </div>
-
-    <div>
-      <h2>Warn</h2>
-      <div class="warn">I'm a warning</div>
-    </div>
-
-    <div>
-      <h2>Error</h2>
-      <div class="error">I'm an error message</div>
+      <h3>.hidden</h3>
+      <p>There should be no sentence between the brackets</p>
+      [
+      <span class="hidden">I should be invisible.</span>
+      ]
     </div>
 
     <hr/>
