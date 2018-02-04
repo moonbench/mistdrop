@@ -19,13 +19,13 @@ html {
 }
 
 body {
-    background-color: #F2F2F2;
+    background-color: #FFF;
     color: #4D4B4B;
     text-rendering: optimizelegibility;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-size: 1em;
     letter-spacing: 0.01em;
-    line-height: 1.62em;
+    line-height: 1.3em;
 }
 
 /**
