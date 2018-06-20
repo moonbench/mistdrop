@@ -2,26 +2,7 @@
 <html>
   <head>
     <title>MistDrop demo</title>
-    <link rel="stylesheet" href="src/mistdrop.css" />
-    <style type="text/css">
-      body {
-        margin: 0px auto;
-        padding: 1em 1em;
-        max-width: 1000px;
-        min-width: 500px;
-      }
-      body > div {
-        margin: 0 0 4em 0;
-        padding: 0 1em;
-      }
-      body > h2 {
-        background-color: #333;
-        color: #EDEDED;
-        padding: 0.5em 0.7em;
-        margin-top: 2em;
-        margin-bottom: 0.5em;
-      }
-    </style>
+    <link rel="stylesheet" href="src/page.css" />
   </head>
 
   <body>
@@ -38,6 +19,8 @@
       <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
     </div>
 
+    <hr />
+
     <div>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
@@ -47,12 +30,16 @@
       <h6>Heading 6</h6>
     </div>
 
+    <hr />
+
     <div>
       <h3>Paragraphs</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
       <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
     </div>
+
+    <hr />
 
     <div>
       <h3>Styles</h3>
@@ -62,10 +49,14 @@
       <p><strike>Strikethrough</strike></p>
     </div>
 
+    <hr />
+
     <div name="links">
       <h3>Links</h3>
       <a href="#links">A link</a>
     </div>
+
+    <hr />
 
     <div>
       <h3>Pre</h3>
@@ -81,45 +72,35 @@ OTHER DEALINGS IN THE SOFTWARE...</pre>
     <div>
       <h3>Pre &gt; Code</h3>
       <pre>
-	<code>/**
- * MistDrop
- * --------
- * Version: 0.0.1
+	<code>
+/**
+ * Code looks like this
  */
-
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
+function foo_bar() {
+  echo("Hello world");
 }
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    color: #4D4B4B;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-size: 1em;
-    font-weight: 300px;
-}</code>
+</code>
       </pre>
     </div>
 
+    <hr />
 
     <h2>Modified elements</h2>
     <div>
       <h3>Buttons</h3>
       <button>A button</button>
       <input type="button" value="Input type=button" />
-
+      <input type="submit" value="Input type=submit" />
     </div>
 
     <div>
       <h3>Buttons (disabled)</h3>
       <button disabled="disabled">A button</button>
       <input type="button" value="Input type=button" disabled="disabled" />
+      <input type="submit" value="Input type=submit" disabled="disabled" />
     </div>
+
+    <hr />
 
     <div>
       <h3>Inputs</h3>
@@ -171,27 +152,7 @@ body {
       </p>
     </div>
 
-    <div>
-      <h3>hr</h3>
-      <p>Hello world</p>
-      <hr>
-      <p>Testing foo bar</p>
-    </div>
-
-    <div>
-      <h3>.success</h3>
-      <div class="success">I am a success message</div>
-    </div>
-
-    <div>
-      <h3>.warn</h3>
-      <div class="warn">I'm a warning</div>
-    </div>
-
-    <div>
-      <h3>.error</h3>
-      <div class="error">I'm an error message</div>
-    </div>
+    <hr />
 
     <h2>Special classes</h2>
     <div>
@@ -204,20 +165,37 @@ body {
       <div>
 	I should be on bottom.
       </div>
+      <p></p>
     </div>
 
     <div>
       <h3>.hidden</h3>
-      <p>There should be no sentence between the brackets</p>
+      <p>There should be no element between the brackets</p>
       [
       <span class="hidden">I should be invisible.</span>
       ]
+      <p></p>
+    </div>
+
+    <div>
+      <h3>.mobile_hidden</h3>
+      <p>The element between the brackets is hidden on mobile (<768px wide)</p>
+      [
+      <div class="mobile_hidden">I should be invisible on mobile only.</div>
+      ]
+      <p></p>
+      <h3>.mobile_only</h3>
+      <p>The element between the brackets is visible only on mobile (<768px wide)</p>
+      [
+      <div class="mobile_only">I should be visible only on mobile.</div>
+      ]
+      <p></p>
     </div>
 
     <hr/>
 
     <div style="font-size: 0.8em">
-      <div>mistdrop v0.3.0</div>
+      <div>mistdrop v0.4.0</div>
       <div>Under the <a href="https://github.com/moonbench/mistdrop/blob/master/LICENSE">MIT License</a>.</div>
       <div>Contribute on <a href="https://github.com/moonbench/mistdrop">github</a>.</div>
     </div>

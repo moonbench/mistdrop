@@ -1,0 +1,62 @@
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  text-rendering: optimizelegibility;
+  color: #4A4A4A;
+}
+
+button, input, textarea, select,
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.35em;
+}
+
+button, input, textarea, select {
+  padding: 0.25em 0.5em;
+}
+
+blockquote, pre {
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background-color: #EEE;
+  border-left: 2px solid #CFCFCF;
+}
+
+pre > code {
+  display: block;
+  white-space: pre;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.hidden, .mobile_only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile_hidden {
+    display: none;
+  }
+  .mobile_only {
+    display: block;
+  }
+}
