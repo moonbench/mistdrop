@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MistDrop demo</title>
+    <title>Mistdrop test page</title>
     <link rel="stylesheet" href="src/page.css" />
   </head>
 
-  <body>
-    <h1>MistDrop</h1>
+  <body style="max-width: 700px; padding: 0 1em">
+    <h1>Mistdrop test page</h1>
 
-    <p>This document provides examples of elements using the mistdrop.css stylesheet.</p>
+    <p>This document is styled with the <a href="http://moonbench.xyz/projects/mistdrop">Mistdrop</a> cleanup stylesheet. (<a href="src/page.css">View source</a>)</p>
     <p>MistDrop can be found on github: <a href="https://github.com/moonbench/mistdrop">https://github.com/moonbench/mistdrop</a></p>
-
-    <h2>Text formatting</h2>
-    <div>
-      <h3>Blockquotes</h3>
-      <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
-      <blockquote>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</blockquote>
-      <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
-    </div>
 
     <hr />
 
+    <h2>Image sizing</h2>
+    <img src="mistdrop.jpg" alt="Close up photograph of grass with small droplets of dew" />
+    <p>Images won't overflow their containers.</p>
+
+    <hr />
+
+    <h2>Text formatting</h2>
+
+    <p>Mistdrop adds basic styles to make text easier to read.</p>
+
     <div>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
+      <h1>Heading Title @ Size 1</h1>
+      <h2>Heading Title @ Size 2</h2>
+      <h3>Heading Title @ Size 3</h3>
+      <h4>Heading Title @ Size 4</h4>
+      <h5>Heading Title @ Size 5</h5>
+      <h6>Heading Title @ Size 6</h6>
     </div>
 
     <hr />
@@ -42,18 +44,8 @@
     <hr />
 
     <div>
-      <h3>Styles</h3>
-      <p><b>Bold</b> <strong>Strong</strong></p>
-      <p><i>Italic</i> <em>Emphasis</em></p>
-      <p><u>Underline</u></p>
-      <p><strike>Strikethrough</strike></p>
-    </div>
-
-    <hr />
-
-    <div name="links">
-      <h3>Links</h3>
-      <a href="#links">A link</a>
+      <h3>Blockquotes</h3>
+      <blockquote>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</blockquote>
     </div>
 
     <hr />
@@ -70,7 +62,7 @@ OTHER DEALINGS IN THE SOFTWARE...</pre>
     </div>
     
     <div>
-      <h3>Pre &gt; Code</h3>
+      <h3>Pre + Code</h3>
       <pre>
 	<code>
 /**
@@ -155,49 +147,29 @@ function foo_bar() {
     <hr />
 
     <h2>Special classes</h2>
-    <div>
-      <h3>.clearfix</h3>
-      <div class="clearfix">
-	<div style="width: 300px;">
-	  <div style="float: right">I should be on top</div>
-	</div>
-      </div>
-      <div>
-	I should be on bottom.
-      </div>
-      <p></p>
-    </div>
 
     <div>
       <h3>.hidden</h3>
-      <p>There should be no element between the brackets</p>
-      [
-      <span class="hidden">I should be invisible.</span>
-      ]
-      <p></p>
+      <p>There should be nothing after the colon: <span class="hidden">I should be invisible.</span></p>
     </div>
 
     <div>
       <h3>.mobile_hidden</h3>
-      <p>The element between the brackets is hidden on mobile (<768px wide)</p>
-      [
-      <div class="mobile_hidden">I should be invisible on mobile only.</div>
-      ]
-      <p></p>
+      <p>The element after the colon is hidden on mobile (<768px wide): <span class="mobile_hidden">Hello world</span>
+      </p>
+    </div>
+    <div>
       <h3>.mobile_only</h3>
-      <p>The element between the brackets is visible only on mobile (<768px wide)</p>
-      [
-      <div class="mobile_only">I should be visible only on mobile.</div>
-      ]
-      <p></p>
+      <p>The element after the colon is visible <strong>only</strong> on mobile (<768px wide): <span class="mobile_only">Hello world</span>
+      </p>
     </div>
 
     <hr/>
 
     <div style="font-size: 0.8em">
-      <div>mistdrop v0.4.0</div>
-      <div>Under the <a href="https://github.com/moonbench/mistdrop/blob/master/LICENSE">MIT License</a>.</div>
-      <div>Contribute on <a href="https://github.com/moonbench/mistdrop">github</a>.</div>
+      <div>mistdrop v1.0.0</div>
+      <div>Provided under the <a href="https://github.com/moonbench/mistdrop/blob/master/LICENSE">MIT License</a>.</div>
+      <div>Download or contribute on <a href="https://github.com/moonbench/mistdrop">github</a>.</div>
     </div>
   </body>
 </html>
