@@ -26,6 +26,7 @@ blockquote, pre {
   margin: 1em 0;
   background-color: #EEE;
   border-left: 2px solid #CFCFCF;
+  overflow-x: auto;
 }
 
 pre > code {
