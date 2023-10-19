@@ -7,26 +7,34 @@ html {
 }
 
 body {
-  color: #4A4A4A;
+  background-color: #151515;
+  color: #d8d8d8;
 }
 
-button, input, textarea, select,
-body {
+a {
+  color: #83f0a4;
+}
+
+button, input, textarea, select, body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   letter-spacing: 0.01em;
   line-height: 1.35em;
 }
 
 button, input, textarea, select {
-  padding: 0.25em 0.5em;
+  padding: 0.3em 0.75em;
+  background-color: #212121;
+  color: #d8d8d8;
+  border: 1px solid #888;
 }
 
 blockquote, pre {
   padding: 0.5em 1em;
   margin: 1em 0;
-  background-color: #EEE;
-  border-left: 2px solid #CFCFCF;
+  background-color: #212121;
+  border-left: 4px solid #888;
   overflow-x: auto;
+  color: #e0e0e0;
 }
 
 pre > code {
